@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Authentication</h1>
+
+        <div id="signup-section">
+            <h2>Signup</h2>
+            <input type="text" id="signup-username" placeholder="Enter Username" />
+            <input type="password" id="signup-password" placeholder="Enter Password" />
+            <button onclick="signup()">Signup</button>
+        </div>
+
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Enter Username" />
+            <input type="password" id="login-password" placeholder="Enter Password" />
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="edit-section">
+            <h2>Edit User</h2>
+            <input type="text" id="edit-username" placeholder="Enter Username" />
+            <input type="password" id="edit-password" placeholder="Enter Password" />
+            <button onclick="editUser()">Edit-User</button>
+        
+        
+            <div class="container" id="editSection" style="display: none;">
+                <h2>Edit Details</h2>
+                <input type="text" id="new-username" placeholder="New Username">
+                <input type="password" id="new-password" placeholder="New Password">
+                <button onclick="updateUser()">Update</button>
+        
+            </div>
+        
+        <div id="user-list-section">
+            <h2>User List</h2>
+            <button onclick="showAllUsers()">Show All Users</button>
+            <ul id="user-list"></ul>
+        </div>
+
+        <div id="delete-section">
+            <h2>Delete User</h2>
+            <input type="text" id="delete-username" placeholder="Enter Username to Delete" />
+            <button onclick="deleteUser()">Delete User</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
